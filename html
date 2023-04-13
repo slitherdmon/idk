@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+
+  <body>
+    <center>
+      <h1>Clicker</h1>
+      <button id='clicker' onclick='increase()'>Click Me!</button>
+      <p>Total Clicks: <span id='counter'>0</span></p>
+      <button id='reset' onclick='reset()'>Reset</button>
+    </center>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+
+    </style>
+    <script>
+      clicks = 0;
+
+
+      function increase() {
+        clicks = clicks + 1;
+        counter.innerHTML = clicks;
+      }
+
+
+      function reset() {
+        clicks = 0;
+        counter.innerHTML = clicks
+      }
+
+
+    </script>
+    <style>
+      button {
+        width: 220px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: #21EBFF;
+        border: none;
+        font: Arial;
+
+
+      }
+
+
+      #reset {
+        background-color: red;
+      }
+      }
+
+
+      #counter {
+        color: orange;
+      }
+
+
+    </style>
+  </body>
+
+
+</html>
